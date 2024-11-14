@@ -32,3 +32,8 @@ function isUrl($value)
 {
     return $_SERVER['REQUEST_URI'] === $value;
 }
+
+function db(): \Core\Db
+{
+    return \Core\App::get(\Core\Db::class);
+}

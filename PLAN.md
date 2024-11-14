@@ -38,7 +38,7 @@ ___
 ---
 
 ---
-#### basicPHP___4 - <span style="color: green;">ACTIVE</span>
-- [ ] Creating service container for database, [___video-16___], `00:02:00`-`00:24:00`
-- [ ] Creating a function to initialize the database connection, [___video-16___], `00:02:00`-`00:24:00`
-- [ ] To correct class DB, [___video-16___], `00:26:00`-`00:33:00`
+#### basicPHP___4
+- [x] Creating service container for database, [___video-16___], `00:02:00`-`00:24:00`
+- [x] Creating a function to initialize the database connection, [___video-16___], `00:02:00`-`00:24:00`
+- [x] To correct class DB, [___video-16___], `00:26:00`-`00:33:00`
