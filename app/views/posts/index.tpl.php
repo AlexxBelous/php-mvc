@@ -3,22 +3,16 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-8">
-                    <div class="card mb-3">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of the card's content.</p>
-                            <a href="#">Go somewhere</a>
+                    <?php foreach ($posts as $post) : ?>
+                        <div class="card mb-3">
+                            <div class="card-body">
+                                <h5 class="card-title"><?php echo $post['title']; ?></h5>
+                                <p class="card-text"><?php echo $post['excerpt']; ?></p>
+                                <a href="#">Read more...</a>
+                            </div>
                         </div>
-                    </div>
-                    <div class="card mb-3">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of the card's content.</p>
-                            <a href="#">Go somewhere</a>
-                        </div>
-                    </div>
+                    <?php endforeach; ?>
+
                 </div>
                 <div class="col-md-4">
                     <?php require_once VIEWS . '/includes/sidebar.php'; ?>
