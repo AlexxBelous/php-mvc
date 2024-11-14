@@ -1,8 +1,6 @@
 <h3>Recent Posts</h3>
 <ul class="list-group">
-    <li class="list-group-item">An item</li>
-    <li class="list-group-item">A second item</li>
-    <li class="list-group-item">A third item</li>
-    <li class="list-group-item">A fourth item</li>
-    <li class="list-group-item">And a fifth one</li>
+    <?php foreach ($resent_posts as $resent_post) : ?>
+        <li class="list-group-item"><a href="#"><?php echo $resent_post['title']; ?></a></li>
+    <?php endforeach; ?>
 </ul>
