@@ -38,7 +38,16 @@ ___
 ---
 
 ---
-#### basicPHP___4 - <span style="color: green;">ACTIVE</span>
-- [ ] Creating service container for database, [___video-16___], `00:02:00`-`00:24:00`
-- [ ] Creating a function to initialize the database connection, [___video-16___], `00:02:00`-`00:24:00`
-- [ ] To correct class DB, [___video-16___], `00:26:00`-`00:33:00`
+#### basicPHP___4
+- [x] Creating service container for database, [___video-16___], `00:02:00`-`00:24:00`
+- [x] Creating a function to initialize the database connection, [___video-16___], `00:02:00`-`00:24:00`
+- [x] To correct class DB, [___video-16___], `00:26:00`-`00:33:00`
+---
+
+---
+#### basicPHP___5 - <span style="color: green;">ACTIVE</span>
+- [ ] Creating a Form for Adding Posts, [___video-9___], `00:03:00`-`00:04:00`
+- [ ] Creating a Route to Display the Form, [___video-9___], `00:04:00`-`00:06:00`
+- [ ] Setting Up Form Submission, [___video-9___], `00:06:00`-`00:10:00`
+- [ ] Generating a slug from the post title and saving the post
+- [ ] Deleting a post, [___video-15___], `00:03:00`-`00:28:00`

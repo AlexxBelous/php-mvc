@@ -1,8 +1,15 @@
 <?php
 use Core\Db;
+use Core\App;
 
-$db_config = require_once CONFIG . '/db.php';
-$db = Db::getInstance()->getConnection($db_config);
+
+
+
+$db = App::get(Db::class);
+
+
+
+
 
 $posts = $db->query("select * from posts order by id desc")->findAll();
 
