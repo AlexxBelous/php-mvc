@@ -1,5 +1,4 @@
 #### basicPHP___1
-
 - [x] Setting up the initial project structure:
     - [x] Creating app  > controllers, views.
         - [x] In controllers creating  > posts  > index.php, create.php, show.php, destroy.php, store.php.
@@ -19,7 +18,6 @@ ___
 
 ---
 #### basicPHP___2
-
 - [x] Implementing routing functionality on the website, [___video-14___], `00:08:00`-`00:30:00`
 - [x] Add a new Blog link and router for it.
 - [x] Dynamic active link highlighting based on the current URL.
@@ -41,6 +39,9 @@ ___
 
 ---
 #### basicPHP___4
-- [ ] Creating service container for database, [___video-16___], `00:02:00`-`00:24:00`
-- [ ] Creating a function to initialize the database connection, [___video-16___], `00:02:00`-`00:24:00`
-- [ ] To correct class DB, [___video-16___], `00:26:00`-`00:33:00`
+- [x] Creating service container for database, [___video-16___], `00:02:00`-`00:24:00`
+- [x] Creating a function to initialize the database connection, [___video-16___], `00:02:00`-`00:24:00`
+- [x] To correct class DB, [___video-16___], `00:26:00`-`00:33:00`
+---
+
+---

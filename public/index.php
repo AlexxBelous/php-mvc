@@ -8,6 +8,8 @@ require_once CORE . '/functions.php';
 
 $router = new Router();
 
+require_once 'bootstrap.php';
+
 require_once CONFIG . '/routes.php';
 
 $router->matches();
