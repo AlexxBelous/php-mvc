@@ -45,9 +45,18 @@ ___
 ---
 
 ---
-#### basicPHP___5 - <span style="color: green;">ACTIVE</span>
-- [ ] Creating a Form for Adding Posts, [___video-9___], `00:03:00`-`00:04:00`
-- [ ] Creating a Route to Display the Form, [___video-9___], `00:04:00`-`00:06:00`
-- [ ] Setting Up Form Submission, [___video-9___], `00:06:00`-`00:10:00`
-- [ ] Generating a slug from the post title and saving the post
-- [ ] Deleting a post, [___video-15___], `00:03:00`-`00:28:00`
+#### basicPHP___5
+- [x] Creating a Form for Adding Posts, [___video-9___], `00:03:00`-`00:04:00`
+- [x] Creating a Route to Display the Form, [___video-9___], `00:04:00`-`00:06:00`
+- [x] Setting Up Form Submission, [___video-9___], `00:06:00`-`00:10:00`
+- [x] Generating a slug from the post title and saving the post
+- [x] Deleting a post, [___video-15___], `00:03:00`-`00:28:00`
+---
+
+---
+#### basicPHP___6 - <span style="color: green;">ACTIVE</span>
+- [ ] Refactoring database access(service container) across multiple files.
+- [ ] Implementation of dynamic routing with named parameters, [___video-26___], `00:05:00`-`00:15:00`
+- [ ] Refactoring method matching, [___video-26___], `00:05:00`-`00:26:00`
+- [ ] Refactoring to human-readable URLs using slugs, [___video-26___], `00:26:00`-`00:33:00`
+- [ ] Add route_param() function, [___video-26___], `00:33:00`-`00:40:00`
