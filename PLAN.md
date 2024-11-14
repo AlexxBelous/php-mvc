@@ -23,6 +23,20 @@ ___
 - [x] Implementing routing functionality on the website, [___video-14___], `00:08:00`-`00:30:00`
 - [x] Add a new Blog link and router for it.
 - [x] Dynamic active link highlighting based on the current URL.
+
+---
+
+---
+#### basicPHP___3 - <span style="color: green;">ACTIVE</span>
+
+- [ ] Creating a database, [___video-05___], `00:11:00`-`00:14:00`
+- [ ] Working with file db.php, [___video-06___], `00:00:30`-`00:05:00`
+- [ ] Working with file class Db.php, [___video-08___]
+    - [ ] The implementation of the Singleton pattern for database connection, [___video-08___], `00:00:00`-`00:10:00`
+    - [ ] The creation of functionality for establishing a database connection, [___video-06___], `00:05:00`-`00:19:00`
+    - [ ] Creating custom methods for retrieving results from the database, [___video-07___], `00:05:00`-`00:20:00`
+- [ ] Initializing the connection and retrieving all records, 3 records  for controller index.php about.php, blog/index.php, [___video-07___], `00:20:00`-`00:29:00`
+
 ---
 
 ---

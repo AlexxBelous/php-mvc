@@ -29,7 +29,6 @@ function abort($code = 404)
 }
 
 
-
 function isUrl($value)
 {
     return $_SERVER['REQUEST_URI'] === $value;
