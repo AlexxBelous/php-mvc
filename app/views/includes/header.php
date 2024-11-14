@@ -33,6 +33,9 @@
                         <li class="nav-item">
                             <a class="nav-link <?php echo isUrl('/blog') ? 'active' : '' ?>" href="/blog">Blog</a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link <?php echo isUrl('/posts/create') ? 'active' : '' ?>" href="/posts/create">Create Post</a>
+                        </li>
 
                     </ul>
 
