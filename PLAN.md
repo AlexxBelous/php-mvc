@@ -18,4 +18,11 @@
 ___
 
 ---
+#### basicPHP___2
 
+- [x] Implementing routing functionality on the website, [___video-14___], `00:08:00`-`00:30:00`
+- [x] Add a new Blog link and router for it.
+- [x] Dynamic active link highlighting based on the current URL.
+---
+
+---
