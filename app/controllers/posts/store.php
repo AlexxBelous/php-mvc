@@ -5,15 +5,7 @@ use Core\Db;
 
 $db = App::get('Core\Db');
 
-function createSlug($title)
-{
-    $slug = mb_strtolower($title, 'UTF-8');
-    $slug = preg_replace('/\s+/', '-', $slug);
-    $slug = preg_replace('/[^\w-]/u', '', $slug);
-    $slug = preg_replace('/-+/', '-', $slug);
-    $slug = trim($slug, '-');
-    return $slug;
-}
+
 
 $slug = createSlug($_POST['title']);
 

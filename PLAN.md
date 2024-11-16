@@ -54,9 +54,13 @@ ___
 ---
 
 ---
-#### basicPHP___6 - <span style="color: green;">ACTIVE</span>
-- [ ] Refactoring database access(service container) across multiple files.
-- [ ] Implementation of dynamic routing with named parameters, [___video-26___], `00:05:00`-`00:15:00`
-- [ ] Refactoring method matching, [___video-26___], `00:05:00`-`00:26:00`
-- [ ] Refactoring to human-readable URLs using slugs, [___video-26___], `00:26:00`-`00:33:00`
-- [ ] Add route_param() function, [___video-26___], `00:33:00`-`00:40:00`
+#### basicPHP___6
+- [x] Refactoring database access(service container) across multiple files.
+- [x] Implementation of dynamic routing with named parameters, [___video-26___], `00:05:00`-`00:15:00`
+- [x] Refactoring method matching, [___video-26___], `00:05:00`-`00:26:00`
+- [x] Refactoring to human-readable URLs using slugs, [___video-26___], `00:26:00`-`00:33:00`
+- [x] Add route_param() function, [___video-26___], `00:33:00`-`00:40:00`
+---
+
+---
+#### basicPHP___7 - <span style="color: green;">ACTIVE</span>
