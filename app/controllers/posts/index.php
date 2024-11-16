@@ -3,7 +3,6 @@ use Core\Db;
 use Core\App;
 
 
-
 $db = App::get(Db::class);
 
 
