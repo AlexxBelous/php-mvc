@@ -70,6 +70,7 @@ class Db
         if (!$result) {
             abort();
         }
+        return $result;
     }
 
 

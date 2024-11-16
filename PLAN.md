@@ -54,9 +54,23 @@ ___
 ---
 
 ---
-#### basicPHP___6 - <span style="color: green;">ACTIVE</span>
-- [ ] Refactoring database access(service container) across multiple files.
-- [ ] Implementation of dynamic routing with named parameters, [___video-26___], `00:05:00`-`00:15:00`
-- [ ] Refactoring method matching, [___video-26___], `00:05:00`-`00:26:00`
-- [ ] Refactoring to human-readable URLs using slugs, [___video-26___], `00:26:00`-`00:33:00`
-- [ ] Add route_param() function, [___video-26___], `00:33:00`-`00:40:00`
+#### basicPHP___6
+- [x] Refactoring database access(service container) across multiple files.
+- [x] Implementation of dynamic routing with named parameters, [___video-26___], `00:05:00`-`00:15:00`
+- [x] Refactoring method matching, [___video-26___], `00:05:00`-`00:26:00`
+- [x] Refactoring to human-readable URLs using slugs, [___video-26___], `00:26:00`-`00:33:00`
+- [x] Add route_param() function, [___video-26___], `00:33:00`-`00:40:00`
+---
+
+---
+#### basicPHP___7 - <span style="color: green;">ACTIVE</span>
+- [ ] Validation form:
+  - [ ] Filtering form data from global array POST based on allowed keys in the $fillAble array [___video-9___], `00:22:00`-`00:26:00`
+- [ ] Validating form data and processing it for database insertion with error handling,  [___video-11___], `00:04:00`-`00:47:00`
+  - [ ] Show errors validation,  [___video-13___], `00:00:00`-`00:06:40`
+  - [ ] Add function redirect,  [___video-10___], `00:23:10`-`00:27:40`
+  - [ ] Show errors validation,  [___video-13___], `00:06:40`-`00:11:00`
+  - [ ] Add component alerts,  [___video-13___], `00:11:00`-`00:18:00`
+  - [ ] Functionality retaining entered field (add function old() + h() ) [___video-10___], `00:04:00`-`00:07:00`
+  - [ ] Adding the htmlspecialchars + flag ENT_QUOTES function to output data from the database. [___video-10___], `00:07:00`-`00:19:00`
+

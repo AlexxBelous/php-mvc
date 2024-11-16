@@ -8,7 +8,7 @@
                             <div class="card-body">
                                 <h5 class="card-title"><?php echo $post['title']; ?></h5>
                                 <p class="card-text"><?php echo $post['excerpt']; ?></p>
-                                <a href="#">Read more...</a>
+                                <a href="posts/<?php echo $post['slug']; ?>">Read more...</a>
                             </div>
                             <form action="/posts" method="POST">
                                 <input type="hidden" name="_method" value="DELETE">
