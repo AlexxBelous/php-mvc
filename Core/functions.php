@@ -37,3 +37,18 @@ function db(): \Core\Db
 {
     return \Core\App::get(\Core\Db::class);
 }
+
+function createSlug($title)
+{
+    $slug = mb_strtolower($title, 'UTF-8');
+    $slug = preg_replace('/\s+/', '-', $slug);
+    $slug = preg_replace('/[^\w-]/u', '', $slug);
+    $slug = preg_replace('/-+/', '-', $slug);
+    $slug = trim($slug, '-');
+    return $slug;
+}
+
+function route_param(string $key, $default = null)
+{
+    return \Core\Router::$route_params[$key] ?? $default;
+}
