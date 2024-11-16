@@ -10,7 +10,13 @@
                                 <p class="card-text"><?php echo $post['excerpt']; ?></p>
                                 <a href="#">Read more...</a>
                             </div>
+                            <form action="/posts" method="POST">
+                                <input type="hidden" name="_method" value="DELETE">
+                                <input type="hidden" name="id" value="<?php echo $post['id']; ?>">
+                                <button type="submit" class="btn btn-link">Delete</button>
+                            </form>
                         </div>
+
                     <?php endforeach; ?>
 
                 </div>

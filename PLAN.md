@@ -45,3 +45,10 @@ ___
 ---
 
 ---
+#### basicPHP___5
+- [x] Creating a Form for Adding Posts, [___video-9___], `00:03:00`-`00:04:00`
+- [x] Creating a Route to Display the Form, [___video-9___], `00:04:00`-`00:06:00`
+- [x] Setting Up Form Submission, [___video-9___], `00:06:00`-`00:10:00`
+- [x] Generating a slug from the post title and saving the post
+- [x] Deleting a post, [___video-15___], `00:03:00`-`00:28:00`
+
