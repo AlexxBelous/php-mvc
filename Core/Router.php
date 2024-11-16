@@ -8,6 +8,7 @@ class Router
     protected $routes = [];
     protected $uri;
     protected $method;
+    public static array $route_params = [];
 
     public function __construct()
     {
@@ -53,11 +54,18 @@ class Router
     {
         $matches = false;
         foreach ($this->routes as $route) {
-            if (($route['uri'] === $this->uri) && ($route['method'] === strtoupper($this->method))) {
+            if ((preg_match("#^{$route['uri']}$#", $this->uri, $match)) && ($route['method'] === strtoupper($this->method))) {
+                foreach ($match as $k => $v) {
+                    if (is_string($k)) {
+                        static::$route_params[$k] = $v;
+                    }
+                }
                 require CONTROLLERS . "/{$route['controller']}";
                 $matches = true;
                 break;
+
             }
+
         }
         if (!$matches) {
             abort();
