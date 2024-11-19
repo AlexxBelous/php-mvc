@@ -6,8 +6,8 @@
                     <?php foreach ($posts as $post) : ?>
                         <div class="card mb-3">
                             <div class="card-body">
-                                <h5 class="card-title"><?php echo $post['title']; ?></h5>
-                                <p class="card-text"><?php echo $post['excerpt']; ?></p>
+                                <h5 class="card-title"><?php echo htmlspecialchars($post['title']); ?></h5>
+                                <p class="card-text"><?php echo htmlspecialchars($post['excerpt']); ?></p>
                                 <a href="posts/<?php echo $post['slug']; ?>">Read more...</a>
                             </div>
                             <form action="/posts" method="POST">

@@ -53,3 +53,35 @@ function route_param(string $key, $default = null)
 {
     return \Core\Router::$route_params[$key] ?? $default;
 }
+
+function load($fillable = [])
+{
+    $data = [];
+    foreach ($_POST as $k => $v) {
+        if (in_array($k, $fillable)) {
+            $data[$k] = trim($v);
+        }
+    }
+    return $data;
+}
+
+function old($fieldname)
+{
+    return isset($_POST[$fieldname]) ? h($_POST[$fieldname]) : '';
+}
+
+function h($str)
+{
+    return htmlspecialchars($str, ENT_QUOTES);
+}
+
+function redirect($url = '')
+{
+    if ($url) {
+        $redirect = $url;
+    } else {
+        $redirect = isset($_SERVER['HTTP_REFERER']) ? $_SERVER['HTTP_REFERER'] : PATH;
+    }
+    header("Location: {$redirect}");
+    die();
+}
