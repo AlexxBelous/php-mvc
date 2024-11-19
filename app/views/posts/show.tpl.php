@@ -5,8 +5,8 @@
                 <div class="col-md-12">
                     <div class="card mb-3">
                         <div class="card-body">
-                            <h5 class="card-title"><?php echo $post['title']; ?></h5>
-                            <p class="card-text"><?php echo $post['content']; ?></p>
+                            <h5 class="card-title"><?php echo htmlspecialchars($post['title']); ?></h5>
+                            <p class="card-text"><?php echo htmlspecialchars($post['content']); ?></p>
                         </div>
                         <form action="/posts" method="POST">
                             <input type="hidden" name="_method" value="DELETE">

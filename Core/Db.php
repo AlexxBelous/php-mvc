@@ -49,8 +49,13 @@ class Db
 
     public function query($query, $params = [])
     {
-        $this->statement = $this->connection->prepare($query);
-        $this->statement->execute($params);
+        try {
+            $this->statement = $this->connection->prepare($query);
+            $this->statement->execute($params);
+        } catch (PDOException $e) {
+            return false;
+        }
+
         return $this;
     }
 
