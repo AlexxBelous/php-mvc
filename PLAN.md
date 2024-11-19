@@ -65,3 +65,13 @@ ___
 
 ---
 #### basicPHP___7 - <span style="color: green;">ACTIVE</span>
+- [ ] Validation form:
+    - [ ] Filtering form data from global array POST based on allowed keys in the $fillable array [___video-9___], `00:22:00`-`00:28:00`
+    - [ ] Functionality displaying error messages for form fields [___video-9___], `00:28:00`-`00:32:00`
+    - [ ] Functionality retaining entered field (add function old() + h() ) [___video-10___], `00:01:00`-`00:012:00`
+    - [ ] Adding the htmlspecialchars + flag ENT_QUOTES function to output data from the database. [___video-10___], `00:12:00`-`00:19:00`
+    - [ ] Saving post data to the database with validation and slug generation [___video-10___], `00:20:00`-`00:23:00`
+    - [ ] Add redirect() function to redirect to a URL or the previous page. [___video-10___], `00:23:00`-`00:29:00`
+    - [ ] Inserting data into the database with error handling. [___video-10___], `00:29:00`-`00:33:00`
+    - [ ] Inserting data and saving the message in the session. [___video-13___], `00:05:00`-`00:07:00`
+
