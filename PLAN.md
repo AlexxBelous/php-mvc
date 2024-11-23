@@ -76,5 +76,14 @@ ___
 ---
 
 ---
-#### basicPHP___8 - <span style="color: green;">ACTIVE</span>
-- [ ] Validating form data and processing it for database insertion with error handling,  [___video-11___]
+#### basicPHP___8
+- [x] Validating form data and processing it for database insertion with error handling,  [___video-11___]
+- [x] Show errors validation,  [___video-13___], `00:00:00`-`00:11:00`
+- [x] Add component alerts,  [___video-13___], `00:11:00`-`00:18:00`
+---
+
+---
+
+#### basicPHP___9 - <span style="color: green;">ACTIVE</span>
+- [ ] Add function check_auth,  [___video-17___], `00:03:00`-`00:05:00`
+- [ ] Creation Middleware. Methods Only  [___video-17___], `00:05:00`-`00:35:00`
