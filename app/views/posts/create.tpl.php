@@ -9,25 +9,19 @@
                             <label for="title" class="form-label">Post Title</label>
                             <input name="title" type="text" class="form-control" id="title" placeholder="file for title"
                                    value="<?php echo old('title') ?>">
-                            <?php if (isset($errors['title'])) : ?>
-                                <div class="invalid-feedback d-block"><?php echo $errors['title']; ?></div>
-                            <?php endif; ?>
+                            <?php echo isset($validation) ? $validation->listErrors('title') : ''; ?>
                         </div>
                         <div class="mb-3">
                             <label for="excerpt" class="form-label">Excerpt</label>
                             <textarea name="excerpt" class="form-control" id="excerpt" rows="2"
                                       placeholder="file for excerpt"><?php echo old('excerpt') ?></textarea>
-                            <?php if (isset($errors['excerpt'])) : ?>
-                                <div class="invalid-feedback d-block"><?php echo $errors['excerpt'] ?></div>
-                            <?php endif; ?>
+                            <?php echo isset($validation) ? $validation->listErrors('excerpt') : ''; ?>
                         </div>
                         <div class="mb-3">
                             <label for="content" class="form-label">Post Content</label>
                             <textarea name="content" class="form-control" id="content" rows="5"
                                       placeholder="file for content"><?php echo old('content') ?></textarea>
-                            <?php if (isset($errors['content'])) : ?>
-                                <div class="invalid-feedback d-block"><?php echo $errors['content'] ?></div>
-                            <?php endif; ?>
+                            <?php echo isset($validation) ? $validation->listErrors('content') : ''; ?>
                         </div>
                         <div class="mb-3">
                             <button type="submit" class="btn btn-primary">Save Post</button>

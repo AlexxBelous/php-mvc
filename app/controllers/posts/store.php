@@ -18,18 +18,11 @@ $validation = $validator->validate($data, [
     'content' => ['required' => true, 'min' => 100,]
 ]);
 
-if($validation->hasErrors()) {
-    print_arr($validation->getErrors());
-} else {
-    echo "Success.";
-}
-
-die();
 
 $slug = createSlug($data['title']);
 $data['slug'] = $slug;
 
-if (empty($errors)) {
+if (!$validation->hasErrors()) {
     if ($db->query("INSERT INTO posts(title, slug, excerpt, content) VALUES (:title, :slug, :excerpt, :content)", $data)) {
         $_SESSION['success'] = 'Ok';
     } else {
@@ -37,5 +30,7 @@ if (empty($errors)) {
     }
     redirect('/blog');
 }
+
+
 
 require VIEWS . '/posts/create.tpl.php';

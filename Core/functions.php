@@ -85,3 +85,15 @@ function redirect($url = '')
     header("Location: {$redirect}");
     die();
 }
+
+function get_alert()
+{
+    if (!empty($_SESSION['success'])) {
+        require_once VIEWS . '/includes/alert_success.php';
+        unset($_SESSION['success']);
+    }
+    if (!empty($_SESSION['error'])) {
+        require_once VIEWS . '/includes/alert_error.php';
+        unset($_SESSION['error']);
+    }
+}
