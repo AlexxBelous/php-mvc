@@ -84,6 +84,10 @@ ___
 
 ---
 
-#### basicPHP___9 - <span style="color: green;">ACTIVE</span>
-- [ ] Add function check_auth,  [___video-17___], `00:03:00`-`00:05:00`
-- [ ] Creation Middleware. Methods Only  [___video-17___], `00:05:00`-`00:35:00`
+#### basicPHP___9
+- [x] Add function check_auth,  [___video-17___], `00:03:00`-`00:05:00`
+- [x] Creation Middleware. Methods Only  [___video-17___], `00:05:00`-`00:35:00`
+---
+
+---
+#### basicPHP___10 - <span style="color: green;">ACTIVE</span>
