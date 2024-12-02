@@ -39,6 +39,16 @@
                         </li>
 
                     </ul>
+                    <ul class="d-flex text-white align-items-center list-unstyled navbar-nav mb-2 mb-lg-0">
+                    <!--                        d-flex text-white align-item-center list-unstyled  navbar-nav  mb-2 mb-lg-0-->
+                        <?php if (check_auth()) : ?>
+                            <li class="nav-item"><a class="nav-link <?php echo isUrl('/logout') ? 'active' : '' ?>" href="/logout"><?php echo $_SESSION['user']['name']; ?></a> </li>
+                            <li class="nav-item"><a class="nav-link <?php echo isUrl('/logout') ? 'active' : '' ?>" href="/logout">Logout</a></li>
+                        <?php else: ?>
+                            <li class="nav-item"><a class="nav-link <?php echo isUrl('/register') ? 'active' : '' ?>" href="/register">Register</a></li>
+                            <li class="nav-item"><a class="nav-link <?php echo isUrl('/login') ? 'active' : '' ?>" href="/login">Login</a></li>
+                        <?php endif; ?>
+                    </ul>
 
                 </div>
             </div>

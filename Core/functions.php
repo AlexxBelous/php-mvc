@@ -96,4 +96,11 @@ function get_alert()
         require_once VIEWS . '/includes/alert_error.php';
         unset($_SESSION['error']);
     }
+
+}
+
+function check_auth()
+{
+    return isset($_SESSION['user']);
+
 }
