@@ -16,38 +16,46 @@ class Router
         $this->method = $_POST['_method'] ?? $_SERVER['REQUEST_METHOD'];
     }
 
+    public function only($middleware)
+    {
+        $this->routes[array_key_last($this->routes)]['middleware'] = $middleware;
+        return $this;
+    }
+
     public function add($uri, $controller, $method)
     {
         $this->routes[] = [
             'uri' => $uri,
             'controller' => $controller,
-            'method' => $method
+            'method' => $method,
+            'middleware' => null
         ];
+        return $this;
     }
 
     public function get($uri, $controller)
     {
-        $this->add($uri, $controller, 'GET');
+        return $this->add($uri, $controller, 'GET');
     }
 
     public function post($uri, $controller)
     {
-        $this->add($uri, $controller, 'POST');
+        return $this->add($uri, $controller, 'POST');
     }
 
     public function delete($uri, $controller)
     {
-        $this->add($uri, $controller, 'DELETE');
+        return $this->add($uri, $controller, 'DELETE');
     }
 
     public function put($uri, $controller)
     {
-        $this->add($uri, $controller, 'PUT');
+        return $this->add($uri, $controller, 'PUT');
     }
 
     public function patch($uri, $controller)
     {
-        $this->add($uri, $controller, 'PATCH');
+        return $this->add($uri, $controller, 'PATCH');
     }
 
     public function matches()
@@ -60,6 +68,15 @@ class Router
                         static::$route_params[$k] = $v;
                     }
                 }
+
+                if ($route['middleware']) {
+                    $middleware = MIDDLEWARE[$route['middleware']] ?? false;
+                    if (!$middleware) {
+                        throw new \Exception("Incorrect middleware {$route['middleware']}");
+                    }
+                    (new $middleware)->handle();
+                }
+
                 require CONTROLLERS . "/{$route['controller']}";
                 $matches = true;
                 break;
