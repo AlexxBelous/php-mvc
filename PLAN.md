@@ -81,19 +81,19 @@ ___
 - [x] Validating form data and processing it for database insertion with error handling,  [___video-11___]
 - [x] Show errors validation,  [___video-13___], `00:00:00`-`00:11:00`
 - [x] Add component alerts,  [___video-13___], `00:11:00`-`00:18:00`
-<<<<<<< HEAD
-
-#### basicPHP___9 - <span style="color: green;">ACTIVE</span>
-=======
 ---
 
 ---
-
 #### basicPHP___9
 - [x] Add function check_auth,  [___video-17___], `00:03:00`-`00:05:00`
 - [x] Creation Middleware. Methods Only  [___video-17___], `00:05:00`-`00:35:00`
 ---
 
 ---
-#### basicPHP___10 - <span style="color: green;">ACTIVE</span>
->>>>>>> basicPHP___10
+#### basicPHP___10
+- [x] Creation Pagination  [___video-20___], `00:01:00`-`00:31:00`
+- [x] Creation Pagination  [___video-21___], `00:01:00`-`00:36:00`
+---
+
+---
+#### basicPHP___11

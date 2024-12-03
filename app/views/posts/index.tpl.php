@@ -16,9 +16,9 @@
                                 <button type="submit" class="btn btn-link">Delete</button>
                             </form>
                         </div>
-
                     <?php endforeach; ?>
-
+                    <hr>
+                    <?php echo $pagination; ?>
                 </div>
                 <div class="col-md-4">
                     <?php require_once VIEWS . '/includes/sidebar.php'; ?>
