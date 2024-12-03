@@ -77,6 +77,11 @@ class Db
         }
         return $result;
     }
+    public function getColumn()
+    {
+        return $this->statement->fetchColumn();
+    }
+
 
 
 }
