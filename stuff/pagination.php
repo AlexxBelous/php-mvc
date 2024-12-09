@@ -29,3 +29,21 @@ return '<nav aria-label="Page navigation example"><ul class="pagination">'
     . $this->current_page . '</a></li>'
     . $page_right . $forward . $end_page
     . '</ul></nav>';
+
+?>
+
+<?php
+
+//<li class='page-item'><a href='#'>&lt;</li></a>
+
+//<li class='page-item'><a href='#'>&gt;</li></a>
+
+//<li class='page-item'><a href='#'>&laquo;</li></a>
+
+//<li class='page-item'><a href='#'>&raquo;</li></a>
+
+//<li class='page-item'><a href='#'></li></a>
+
+//<li class='page-item'><a href='#'></li></a>
+
+?>
