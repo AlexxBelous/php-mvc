@@ -23,9 +23,26 @@ for ($i = 1; $i <= $this->mid_size; $i++) {
     }
 }
 
-return '<nav aria-label="Page navigation example"><ul class="pagination">'
-    . $start_page . $back . $page_left
-    . '<li class="page-item active"><a class="page-link">'
-    . $this->current_page . '</a></li>'
-    . $page_right . $forward . $end_page
-    . '</ul></nav>';
+$htmlParts = [
+    '<nav aria-label="Page navigation example">',
+    '<ul class="pagination">',
+    $start_page,
+    $back,
+    $pages_left,
+    '<li class="page-item active"><a href="#" class="page-link">' . $this->current_page . '</a></li>',
+    $pages_right,
+    $forward,
+    $end_page,
+    '</ul>',
+    '</nav>',
+];
+
+return implode('', $htmlParts);
+
+
+
+"<li class='page-item'><a href='#' class='page-link'>&lt;</a></li>";
+"<li class='page-item'><a href='#' class='page-link'>&gt;</a></li>";
+"<li class='page-item'><a href='#' class='page-link'>&laquo;</a></li>";
+"<li class='page-item'><a href='#' class='page-link'>&raquo;</a></li>";
+"<li class='page-item'><a href='#' class='page-link'></a></li>";
