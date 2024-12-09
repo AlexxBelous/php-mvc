@@ -21,33 +21,41 @@ class Router
         $this->routes[] = [
             'uri' => $uri,
             'controller' => $controller,
-            'method' => $method
+            'method' => $method,
+            'middleware' => null
         ];
+        return $this;
+    }
+
+    public function only($middleware)
+    {
+        $this->routes[array_key_last($this->routes)]['middleware'] = $middleware;
+        return $this;
     }
 
     public function get($uri, $controller)
     {
-        $this->add($uri, $controller, 'GET');
+        return $this->add($uri, $controller, 'GET');
     }
 
     public function post($uri, $controller)
     {
-        $this->add($uri, $controller, 'POST');
+        return $this->add($uri, $controller, 'POST');
     }
 
     public function delete($uri, $controller)
     {
-        $this->add($uri, $controller, 'DELETE');
+        return $this->add($uri, $controller, 'DELETE');
     }
 
     public function put($uri, $controller)
     {
-        $this->add($uri, $controller, 'PUT');
+        return $this->add($uri, $controller, 'PUT');
     }
 
     public function patch($uri, $controller)
     {
-        $this->add($uri, $controller, 'PATCH');
+        return $this->add($uri, $controller, 'PATCH');
     }
 
     public function matches()
@@ -55,11 +63,13 @@ class Router
         $matches = false;
         foreach ($this->routes as $route) {
             if ((preg_match("#^{$route['uri']}$#", $this->uri, $match)) && ($route['method'] === strtoupper($this->method))) {
+
                 foreach ($match as $k => $v) {
                     if (is_string($k)) {
                         static::$route_params[$k] = $v;
                     }
                 }
+
                 require CONTROLLERS . "/{$route['controller']}";
                 $matches = true;
                 break;

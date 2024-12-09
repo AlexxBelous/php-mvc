@@ -37,7 +37,18 @@
                             <a class="nav-link <?php echo isUrl('/posts/create') ? 'active' : '' ?>"
                                href="/posts/create">Create Post</a>
                         </li>
-
+                    </ul>
+                    <ul class="navbar-nav d-flex text-white align-items-center list-unstyled">
+                        <?php if (check_auth()): ?>
+                            <li class="nav-item"><?php echo $_SESSION['user']['name']; ?></li>
+                            <li class="nav-item"><a class="nav-link <?php echo isUrl('/logout') ? 'active' : '' ?>"
+                                                    href="/logout">Logout</a></li>
+                        <?php else: ?>
+                            <li class="nav-item"><a class="nav-link <?php echo isUrl('/register') ? 'active' : '' ?>"
+                                                    href="/register">Register</a></li>
+                            <li class="nav-item"><a class="nav-link <?php echo isUrl('/login') ? 'active' : '' ?>"
+                                                    href="/login">Login</a></li>
+                        <?php endif; ?>
                     </ul>
 
                 </div>
