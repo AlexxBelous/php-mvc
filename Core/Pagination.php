@@ -19,6 +19,7 @@ class Pagination
     {
         $this->count_page = $this->getCountPages();
         $this->current_page = $this->getCurrentPage();
+        $this->uri = $this->getParams();
     }
 
     private function getCountPages(): int
@@ -40,5 +41,23 @@ class Pagination
     public function getStart(): int
     {
         return ($this->current_page - 1) * $this->per_page;
+    }
+
+    private function getParams(): string
+    {
+        $url = $_SERVER['REQUEST_URI'];
+        $url = explode('?', $url);
+        $uri = $url[0];
+        if (isset($url[1]) && $url != '') {
+            $uri .= '?';
+            $params = explode('&', $url[1]);
+            foreach ($params as $param) {
+                if (!str_contains($param, 'page=')) {
+                    $uri .= "{$param}&";
+                }
+            }
+        }
+        print_arr($uri);
+        return $uri;
     }
 }
